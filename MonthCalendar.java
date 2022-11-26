@@ -1,13 +1,12 @@
 import java.time.DayOfWeek;
 import java.time.LocalDate;
-import java.time.Month;
 import java.time.temporal.ChronoUnit;
 import java.time.temporal.TemporalAdjusters;
 import java.util.List;
 import java.util.stream.Collectors;
 
 public interface MonthCalendar {
-    static Integer ZERO = 0;
+    Integer ZERO = 0;
     default Integer skipDay(){
         return ZERO;
     }
